@@ -245,3 +245,19 @@ a.w3-project-link:hover {
 
 .w3-accent,.w3-hover-accent:hover{color:#fff!important;background-color:#006064!important}
 .w3-text-accent,.w3-hover-text-accent:hover{color:#006064!important}
+
+.fa-custom {
+    margin-bottom: -3.75px !important;
+}
+
+.icon-scholar {
+    content: url('assets/google-scholar.svg');
+    height: 1em;
+    width: auto;
+}
+
+.icon-scopus {
+    content: url('assets/scopus.svg');
+    height: 1em;
+    width: auto;
+}
