@@ -20,7 +20,7 @@ function CreatePDFfromHTML() {
             pdf.addPage(PDF_Width, PDF_Height);
             pdf.addImage(imgData, 'JPG', top_left_margin, -(PDF_Height*i)+(top_left_margin*4),canvas_image_width,canvas_image_height+(top_left_margin*4));
         }
-        pdf.save("CV_Dmitriy_Moroz.pdf");
+        pdf.save("CV.pdf");
         $(".btnpdf").show();
         $(".nopdf").show();
     });
