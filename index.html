@@ -1,70 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Dmitriy Moroz</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>Dmitriy Moroz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" href="favicon.ico">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-        <meta charset="utf-8">
-        
-        <link rel="stylesheet" href="style.css">
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8">
 
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
-        <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-        <script type="text/javascript" src="./scripts/pdf.js"></script>
-        <style>html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}</style>
-    </head>
-    <body class="w3-light-grey">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
-        <!-- Page Container -->
-        <div class="w3-content w3-margin-top" style="max-width:1400px;">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script type="text/javascript" src="./scripts/pdf.js"></script>
+    <style>html, body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Roboto", sans-serif
+    }</style>
+</head>
+<body class="w3-light-grey">
 
-        <!-- The Grid -->
-        <div class="w3-row-padding" id="pdf">
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-            <!-- Left Column -->
-            <div class="w3-third">
+    <!-- The Grid -->
+    <div class="w3-row-padding" id="pdf">
+
+        <!-- Left Column -->
+        <div class="w3-third">
 
             <div class="w3-white w3-text-grey w3-card-4">
                 <div class="w3-container">
                     <div class="w3-text-black"><h2>Dmitriy Moroz</h2></div>
-                    <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-accent"></i>Android developer</p>
-                    <p><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-large w3-text-accent"></i>Ph.D, Computer Science</p>
+                    <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-accent"></i>Android developer
+                    </p>
+                    <p><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-large w3-text-accent"></i>Ph.D, Computer
+                        Science</p>
                     <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-accent"></i>Ukraine</p>
-                    <p><a href="mailto:dmitriy@moroz.cc"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-accent"></i>dmitriy@moroz.cc</a></p>
+                    <p><a href="mailto:dmitriy@moroz.cc"><i
+                            class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-accent"></i>dmitriy@moroz.cc</a>
+                    </p>
                     <!--<button id="btnpdf1" class="btnpdf">Download CV</button>
                     <script>
                         document.getElementById("btnpdf1").addEventListener("click", CreatePDFfromHTML);
                     </script>-->
                     <hr>
                     <div class="w3-container w3-center w3-margin-top nopdf">
-                        <a title="ORCID" href="https://orcid.org/0000-0003-2577-3352" target="_blank"><i class="fa-brands fa-2x fa-orcid w3-hover-opacity w3-text-accent"></i></a>
-                        <a title="Scopus Author" href="https://www.scopus.com/authid/detail.uri?authorId=57369936300" target="_blank"><i class="fa-custom icon-scopus fa-2x w3-hover-opacity w3-text-accent"></i></a>
-                        <a title="Google Scholar" href="https://scholar.google.com.ua/citations?hl=uk&user=u_NEcucAAAAJ" target="_blank"><i class="fa-custom icon-scholar fa-2x w3-hover-opacity w3-text-accent"></i></a>
-                        <a title="GitHub" href="https://github.com/ShiftHackZ/" target="_blank"><i class="fa-brands fa-2x fa-github w3-hover-opacity w3-text-accent"></i></a>
-                        <a title="Personal IT Blog" href="https://blog.moroz.cc" target="_blank"><i class="fa-brands fa-2x fa-blogger-b w3-hover-opacity w3-text-accent"></i></a>
-                        <a title="LinkedIn" href="https://www.linkedin.com/in/moroz-dm-m/" target="_blank"><i class="fa-brands fa-2x fa-linkedin-in w3-hover-opacity w3-text-accent"></i></a>
+                        <a title="ORCID" href="https://orcid.org/0000-0003-2577-3352" target="_blank"><i
+                                class="fa-brands fa-2x fa-orcid w3-hover-opacity w3-text-accent"></i></a>
+                        <a title="Scopus Author" href="https://www.scopus.com/authid/detail.uri?authorId=57369936300"
+                           target="_blank"><i
+                                class="fa-custom icon-scopus fa-2x w3-hover-opacity w3-text-accent"></i></a>
+                        <a title="Google Scholar" href="https://scholar.google.com.ua/citations?hl=uk&user=u_NEcucAAAAJ"
+                           target="_blank"><i class="fa-custom icon-scholar fa-2x w3-hover-opacity w3-text-accent"></i></a>
+                        <a title="GitHub" href="https://github.com/ShiftHackZ/" target="_blank"><i
+                                class="fa-brands fa-2x fa-github w3-hover-opacity w3-text-accent"></i></a>
+                        <a title="Personal IT Blog" href="https://blog.moroz.cc" target="_blank"><i
+                                class="fa-brands fa-2x fa-blogger-b w3-hover-opacity w3-text-accent"></i></a>
+                        <a title="LinkedIn" href="https://www.linkedin.com/in/moroz-dm-m/" target="_blank"><i
+                                class="fa-brands fa-2x fa-linkedin-in w3-hover-opacity w3-text-accent"></i></a>
                     </div>
                     <hr class="nopdf">
 
-                    <p class="w3-large"><b><i class="fa-solid fa-code fa-fw w3-margin-right w3-text-accent"></i>Coding</b></p>
+                    <p class="w3-large"><b><i
+                            class="fa-solid fa-code fa-fw w3-margin-right w3-text-accent"></i>Coding</b></p>
                     <h5>Kotlin</h5>
                     <div class="w3-light-grey w3-round-xlarge w3-small">
                         <div class="w3-container w3-center w3-round-xlarge w3-accent" style="width:91%">
                             <div class="w3-center w3-text-white">91%</div>
                         </div>
-                    </div>  
+                    </div>
                     <h5>Java</h5>
                     <div class="w3-light-grey w3-round-xlarge w3-small">
                         <div class="w3-container w3-center w3-round-xlarge w3-accent" style="width:71%">
@@ -97,7 +111,8 @@
                     </div>
                     <br>
 
-                    <p class="w3-large"><b><i class="fa fa-user fa-fw w3-margin-right w3-text-accent"></i>Soft Skills</b></p>
+                    <p class="w3-large"><b><i class="fa fa-user fa-fw w3-margin-right w3-text-accent"></i>Soft
+                        Skills</b></p>
                     <p>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">Self development</span>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">Team Work</span>
@@ -107,7 +122,8 @@
                     </p>
 
 
-                    <p class="w3-large"><b><i class="fa-brands fa-codepen fa-fw w3-margin-right w3-text-accent"></i>Technologies</b></p>
+                    <p class="w3-large"><b><i class="fa-brands fa-codepen fa-fw w3-margin-right w3-text-accent"></i>Technologies</b>
+                    </p>
                     <p>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">Dagger Hilt</span>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">Dagger 2</span>
@@ -124,7 +140,8 @@
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">Retrofit 2</span>
                     </p>
 
-                    <p class="w3-large"><b><i class="fa fa-hammer fa-fw w3-margin-right w3-text-accent"></i>Tools</b></p>
+                    <p class="w3-large"><b><i class="fa fa-hammer fa-fw w3-margin-right w3-text-accent"></i>Tools</b>
+                    </p>
                     <p>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">Linux</span>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">KVM</span>
@@ -135,30 +152,46 @@
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">Azure</span>
                     </p>
 
-                    <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-accent"></i>Languages</b></p>
+                    <p class="w3-large w3-text-theme"><b><i
+                            class="fa fa-globe fa-fw w3-margin-right w3-text-accent"></i>Languages</b></p>
                     <p>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">🇺🇸 English</span> - Level B2<br>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">🇺🇦 Ukrainian</span> - Native speaker<br>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">🇺🇸 English</span> -
+                        Level B2<br>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">🇺🇦 Ukrainian</span>
+                        - Native speaker<br>
                     </p>
                     <br>
-                
-                    
-                    </div>
+
+
+                </div>
             </div>
             <br>
 
             <!-- End Left Column -->
-            </div>
+        </div>
 
-            <!-- Right Column -->
-            <div class="w3-twothird">
+        <!-- Right Column -->
+        <div class="w3-twothird">
 
             <!-- EXP -->
-                <div class="w3-container w3-card w3-white w3-margin-bottom" id="exp">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-accent"></i>Work Experience</h2>
+            <div class="w3-container w3-card w3-white w3-margin-bottom" id="exp">
+                <h2 class="w3-text-grey w3-padding-16"><i
+                        class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-accent"></i>Work Experience</h2>
+                <!--  -->
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Fullstack Developer (Mobile & Backend) at NDA</b></h5>
+                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>Jan 2025 -
+                        <span class="w3-tag w3-accent w3-round">now</span></h6>
+                    <p>
+                        Full time, Remote.<br>
+                        Responsibilities: product development.
+                    </p>
+                    <hr>
+                </div>
                 <div class="w3-container">
                     <h5 class="w3-opacity"><b>Android Developer at Obscura LLC</b></h5>
-                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>Aug 2020 - <span class="w3-tag w3-accent w3-round">now</span></h6>
+                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>Aug 2020 -
+                        Jan 2025</h6>
                     <p>
                         Full time, Office & Remote.<br>
                         Responsibilities: feature planning, team mentor, product development.
@@ -166,8 +199,10 @@
                     <hr>
                 </div>
                 <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Android Developer at <a href="https://www.solvits.com/" target="_blank">Solvits Solutions</a></b></h5>
-                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>May 2021 - Nov 2023</h6>
+                    <h5 class="w3-opacity"><b>Android Developer at <a href="https://www.solvits.com/" target="_blank">Solvits
+                        Solutions</a></b></h5>
+                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>May 2021 -
+                        Nov 2023</h6>
                     <p>
                         Part time, Remote.<br>
                         Responsibilities: android application development, user support.
@@ -184,8 +219,10 @@
                     <hr>
                 </div> -->
                 <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Android Developer at <a href="https://amconsoft.com/" target="_blank">Amcon Soft</a></b></h5>
-                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>Nov 2019 - Jul 2020</h6>
+                    <h5 class="w3-opacity"><b>Android Developer at <a href="https://amconsoft.com/" target="_blank">Amcon
+                        Soft</a></b></h5>
+                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>Nov 2019 -
+                        Jul 2020</h6>
                     <p>
                         Full time, Office & Remote.<br>
                         Responsibilities: android application development.
@@ -194,27 +231,34 @@
                 </div>
                 <div class="w3-container">
                     <h5 class="w3-opacity"><b>System Administrator & DevOps at NDA</b></h5>
-                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>Nov 2017 - Oct 2019</h6>
+                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>Nov 2017 -
+                        Oct 2019</h6>
                     <p>
                         Full time, Office.<br>
-                        Responsibilities: server infrastructure maintenance, user support, automation of enterprise processes.
+                        Responsibilities: server infrastructure maintenance, user support, automation of enterprise
+                        processes.
                     </p>
                     <br>
                 </div>
-                </div>
+            </div>
 
-                <!-- EDU -->
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-accent"></i>Education</h2>
+            <!-- EDU -->
+            <div class="w3-container w3-card w3-white w3-margin-bottom">
+                <h2 class="w3-text-grey w3-padding-16"><i
+                        class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-accent"></i>Education</h2>
                 <div class="w3-container">
-                    <h5 class="w3-opacity"><a href="https://www.nmu.org.ua/en/" target="_blank"><b>Dnipro University of Technology</b></a></h5>
-                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>2021 - 2023</h6>
+                    <h5 class="w3-opacity"><a href="https://www.nmu.org.ua/en/" target="_blank"><b>Dnipro University of
+                        Technology</b></a></h5>
+                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>2021 -
+                        2023</h6>
                     <p>Ph.D, Computer Science.</p>
                     <hr>
                 </div>
                 <div class="w3-container">
-                    <h5 class="w3-opacity"><a href="https://www.dnu.dp.ua/" target="_blank"><b>Oles Honchar Dnipro National University</b></a></h5>
-                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>2019 - 2021</h6>
+                    <h5 class="w3-opacity"><a href="https://www.dnu.dp.ua/" target="_blank"><b>Oles Honchar Dnipro
+                        National University</b></a></h5>
+                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>2019 -
+                        2021</h6>
                     <p>
                         Master's degree, Computer Engineering.<br>
                         Faculty of Physics, Electornics and Computer systems.
@@ -222,8 +266,10 @@
                     <hr>
                 </div>
                 <div class="w3-container">
-                    <h5 class="w3-opacity"><a href="https://www.dnu.dp.ua/" target="_blank"><b>Oles Honchar Dnipro National University</b></a></h5>
-                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>2015 - 2019</h6>
+                    <h5 class="w3-opacity"><a href="https://www.dnu.dp.ua/" target="_blank"><b>Oles Honchar Dnipro
+                        National University</b></a></h5>
+                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>2015 -
+                        2019</h6>
                     <p>
                         Bachelor's degree, Computer Engineering.<br>
                         Faculty of Physics, Electornics and Computer systems.
@@ -231,31 +277,40 @@
                     <hr>
                 </div>
                 <div class="w3-container">
-                    <h5 class="w3-opacity"><a href="https://www.dlit.dp.ua/" target="_blank"><b>Lyceum of Information Technologies</b></a></h5>
-                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>2010 - 2015</h6>
+                    <h5 class="w3-opacity"><a href="https://www.dlit.dp.ua/" target="_blank"><b>Lyceum of Information
+                        Technologies</b></a></h5>
+                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>2010 -
+                        2015</h6>
                     <p>High school, Computer engineering</p><br>
                 </div>
-                </div>
+            </div>
 
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-accent"></i>Certificates</h2>
+            <div class="w3-container w3-card w3-white w3-margin-bottom">
+                <h2 class="w3-text-grey w3-padding-16"><i
+                        class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-accent"></i>Certificates</h2>
                 <div class="w3-container">
-                    <h5 class="w3-opacity"><a href="./assets/phd.jpg"><b>Diploma of Doctor of Philosophy (PhD)</b></a></h5>
-                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>Nov 2023</span></h6>
-                    <p>H23 № 001639, <a href="https://svr.naqa.gov.ua/#/defense/2300" target="_blank">Naqa accreditation</a></p>
+                    <h5 class="w3-opacity"><a href="./assets/phd.jpg"><b>Diploma of Doctor of Philosophy (PhD)</b></a>
+                    </h5>
+                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>Nov
+                        2023</span></h6>
+                    <p>H23 № 001639, <a href="https://svr.naqa.gov.ua/#/defense/2300" target="_blank">Naqa
+                        accreditation</a></p>
                     <hr>
                 </div>
                 <div class="w3-container">
-                    <h5 class="w3-opacity"><a href="./assets/75D90R415DP09.jpg"><b>English B2 Language certificate</b></a></h5>
-                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>Sep 2020</span></h6>
+                    <h5 class="w3-opacity"><a href="./assets/75D90R415DP09.jpg"><b>English B2 Language
+                        certificate</b></a></h5>
+                    <h6 class="w3-text-accent"><i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i>Sep
+                        2020</span></h6>
                     <p>Langskill, B2 Level, ID: 75D90R415DP09</p>
                 </div>
                 <br>
-                </div>
+            </div>
 
-                <!-- PROJECTS -->
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa-solid fa-display fa-fw w3-margin-right w3-xxlarge w3-text-accent"></i>Projects</h2>
+            <!-- PROJECTS -->
+            <div class="w3-container w3-card w3-white w3-margin-bottom">
+                <h2 class="w3-text-grey w3-padding-16"><i
+                        class="fa-solid fa-display fa-fw w3-margin-right w3-xxlarge w3-text-accent"></i>Projects</h2>
 
                 <div class="w3-container">
                     <h5 class="w3-opacity"><b>Hummingbird</b></h5>
@@ -264,7 +319,7 @@
                         <i class="fa-solid fa-mobile-screen fa-fw w3-margin-right"></i><span class="w3-margin-right">Android Application</span>
                         <i class="fa-solid fa-code-branch fa-fw w3-margin-right"></i><span class="w3-margin-right">Development</span>
                     </span>
-                    
+
                     <p>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">Kotlin</span>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">MVVM</span>
@@ -286,7 +341,7 @@
                         <i class="fa-solid fa-mobile-screen fa-fw w3-margin-right"></i><span class="w3-margin-right">Android Application</span>
                         <i class="fa-solid fa-code-branch fa-fw w3-margin-right"></i><span class="w3-margin-right">Production</span>
                     </span>
-                    
+
                     <p>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">Kotlin</span>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">MVVM</span>
@@ -307,7 +362,7 @@
                         <i class="fa-solid fa-mobile-screen fa-fw w3-margin-right"></i><span class="w3-margin-right">Android Application</span>
                         <i class="fa-solid fa-code-branch fa-fw w3-margin-right"></i><span class="w3-margin-right">Production</span>
                     </span>
-                    
+
                     <p>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">Kotlin</span>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">MVVM</span>
@@ -326,7 +381,7 @@
                         <i class="fa-solid fa-mobile-screen fa-fw w3-margin-right"></i><span class="w3-margin-right">Flutter Application</span>
                         <i class="fa-solid fa-code-branch fa-fw w3-margin-right"></i><span class="w3-margin-right">Production</span>
                     </span>
-                    
+
                     <p>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">Dart</span>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">Cubit</span>
@@ -346,7 +401,7 @@
                         <i class="fa-brands fa-android fa-fw w3-margin-right"></i><span class="w3-margin-right">Android Application</span>
                         <i class="fa-solid fa-code-branch fa-fw w3-margin-right"></i><span class="w3-margin-right">Development</span>
                     </span>
-                    
+
                     <p>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">Kotlin</span>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">MVVM</span>
@@ -367,7 +422,7 @@
                         <i class="fa-brands fa-android fa-fw w3-margin-right"></i><span class="w3-margin-right">Android Application</span>
                         <i class="fa-solid fa-code-branch fa-fw w3-margin-right"></i><span class="w3-margin-right">Development</span>
                     </span>
-                    
+
                     <p>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">Java</span>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">MVP</span>
@@ -387,7 +442,7 @@
                         <i class="fa-brands fa-android fa-fw w3-margin-right"></i><span class="w3-margin-right">Android Application</span>
                         <i class="fa-solid fa-code-branch fa-fw w3-margin-right"></i><span class="w3-margin-right">Production</span>
                     </span>
-                    
+
                     <p>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">Kotlin</span>
                         <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag">MVVM</span>
@@ -402,32 +457,43 @@
                 </div>
                 <hr>
                 <div class="w3-container">
-                    <h5 class="w3-opacity"><a href="https://fpecs.dnu.dp.ua/" class="w3-project-link" target="_blank"><b>Faculty of Physics, Electornics and Computer systems</b></a></h5>
+                    <h5 class="w3-opacity"><a href="https://fpecs.dnu.dp.ua/" class="w3-project-link"
+                                              target="_blank"><b>Faculty of Physics, Electornics and Computer
+                        systems</b></a></h5>
                     <span class="w3-text-accent">
                         <i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i><span class="w3-margin-right">2017 - 2018</span>
-                        <i class="fa-brands fa-chrome fa-fw w3-margin-right"></i><span class="w3-margin-right">Website</span>
+                        <i class="fa-brands fa-chrome fa-fw w3-margin-right"></i><span
+                            class="w3-margin-right">Website</span>
                         <i class="fa-solid fa-code-branch fa-fw w3-margin-right"></i><span class="w3-margin-right">Production</span>
                     </span>
-                    
+
                     <p>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-brands fa-wordpress"></i> WordPress</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-brands fa-php"></i> PHP</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-brands fa-html5"></i> HTML 5</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-brands fa-css3-alt"></i> CSS 3</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-brands fa-wordpress"></i> WordPress</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-brands fa-php"></i> PHP</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-brands fa-html5"></i> HTML 5</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-brands fa-css3-alt"></i> CSS 3</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-brands fa-figma"></i> Figma</span>
                     </p>
                     <p>Prototyping & Design, Custom template layout, product release & deployment, support.</p>
                 </div>
                 <br>
-                </div>
+            </div>
 
-                <!-- PUBLICATIONS -->
-                <div class="w3-container w3-card w3-white">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa-solid fa-newspaper fa-fw w3-margin-right w3-xxlarge w3-text-accent"></i>Publications and Articles</h2>
+            <!-- PUBLICATIONS -->
+            <div class="w3-container w3-card w3-white">
+                <h2 class="w3-text-grey w3-padding-16"><i
+                        class="fa-solid fa-newspaper fa-fw w3-margin-right w3-xxlarge w3-text-accent"></i>Publications
+                    and Articles</h2>
 
                 <div class="w3-container">
                     <h5 class="w3-opacity">
-                        <a href="http://nmetau.edu.ua/file/--sbornik-varna-2021-full.pdf" class="w3-project-link" target="_blank">
+                        <a href="http://nmetau.edu.ua/file/--sbornik-varna-2021-full.pdf" class="w3-project-link"
+                           target="_blank">
                             <b>Peculiarities of using multicore processors in multiprocessor computer systems.</b>
                         </a>
                     </h5>
@@ -435,7 +501,7 @@
                         <i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i><span class="w3-margin-right">5 Jun 2021</span>
                         <i class="fa-solid fa-check fa-fw w3-margin-right"></i><span class="w3-margin-right">XVІ International Conference «Strategy of Quality in Industry and Education», Varna, Bulgaria</span>
                     </span>
-                    
+
                     <p>
                         XVI International Conference<br>
                         "Quality strategy in industry and education" June 02-05, 2021, Varna, Bulgaria. C. 278-281.<br>
@@ -445,7 +511,8 @@
                 <hr>
                 <div class="w3-container">
                     <h5 class="w3-opacity">
-                        <a href="https://doi.org/10.34185/1562-9945-5-136-2021-11" class="w3-project-link" target="_blank">
+                        <a href="https://doi.org/10.34185/1562-9945-5-136-2021-11" class="w3-project-link"
+                           target="_blank">
                             <b>Efficient algorithms for parallelizing tridiagonal systems of equations.</b>
                         </a>
                     </h5>
@@ -455,13 +522,18 @@
                     </span>
 
                     <p>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Shvachych G.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Vozna N. </span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Ivashchenko O.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Bilyi O.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Moroz D.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Shvachych G.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Vozna N. </span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Ivashchenko O.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Bilyi O.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Moroz D.</span>
                     </p>
-                    
+
                     <p>
                         "System Technologies" 5 (136) 2021.<br>
                         p. 110-119.
@@ -470,7 +542,8 @@
                 <hr>
                 <div class="w3-container">
                     <h5 class="w3-opacity">
-                        <a href="https://spacehuman.org/_files/doc/sbornik2021.pdf" class="w3-project-link" target="_blank">
+                        <a href="https://spacehuman.org/_files/doc/sbornik2021.pdf" class="w3-project-link"
+                           target="_blank">
                             <b>Analysis of the development of architectures of modern multiprocessor systems.</b>
                         </a>
                     </h5>
@@ -480,18 +553,22 @@
                     </span>
 
                     <p>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Shvachych G.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Moroz D.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Shvachych G.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Moroz D.</span>
                     </p>
-                    
+
                     <p>
-                        Collection of theses XXIII International youth scientific and practical conference Man and space. April 14-16, 2021, Dnipro - 2021. C. 52.
+                        Collection of theses XXIII International youth scientific and practical conference Man and
+                        space. April 14-16, 2021, Dnipro - 2021. C. 52.
                     </p>
                 </div>
                 <hr>
                 <div class="w3-container">
                     <h5 class="w3-opacity">
-                        <a href="https://doi.org/10.31435/rsglobal_wos/30042021/7520" class="w3-project-link" target="_blank">
+                        <a href="https://doi.org/10.31435/rsglobal_wos/30042021/7520" class="w3-project-link"
+                           target="_blank">
                             <b>Method of lines in distributed problems of experimental data processing.</b>
                         </a>
                     </h5>
@@ -501,13 +578,18 @@
                     </span>
 
                     <p>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Shvachych G.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Vozna N.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Ivashchenko O.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Bilyi O.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Moroz D.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Shvachych G.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Vozna N.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Ivashchenko O.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Bilyi O.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Moroz D.</span>
                     </p>
-                    
+
                     <p>
                         International Academy Journal Web of Scholar 2(52), 2021. - P. 1-7.
                     </p>
@@ -515,7 +597,8 @@
                 <hr>
                 <div class="w3-container">
                     <h5 class="w3-opacity">
-                        <a href="https://doi.org/10.34185/1991-7848.itmm.2021.01.038" class="w3-project-link" target="_blank">
+                        <a href="https://doi.org/10.34185/1991-7848.itmm.2021.01.038" class="w3-project-link"
+                           target="_blank">
                             <b>A model of parallel computing with continuous time.</b>
                         </a>
                     </h5>
@@ -523,23 +606,26 @@
                         <i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i><span class="w3-margin-right">10 Apr 2021</span>
                         <i class="fa-solid fa-check fa-fw w3-margin-right"></i><span class="w3-margin-right">IV Intrenational Conference. May 30 – June 6. 2008, Varna, Bulgaria, 2008. Vol. 2.</span>
                     </span>
-                    
+
                     <p>
-                        International scientific and technical conference "Information technologies in of metallurgy and mechanical engineering" March 16-18, 2021. Dnipro. - C. 305-309.
+                        International scientific and technical conference "Information technologies in of metallurgy and
+                        mechanical engineering" March 16-18, 2021. Dnipro. - C. 305-309.
                     </p>
                 </div>
                 <hr>
                 <div class="w3-container">
                     <h5 class="w3-opacity">
-                        <a href="https://doi.org/10.34185/1562-9945-3-134-2021-07" class="w3-project-link" target="_blank">
-                            <b>Research of the influence of a network interface on the efficiency of modular multiprocessor systems.</b>
+                        <a href="https://doi.org/10.34185/1562-9945-3-134-2021-07" class="w3-project-link"
+                           target="_blank">
+                            <b>Research of the influence of a network interface on the efficiency of modular
+                                multiprocessor systems.</b>
                         </a>
                     </h5>
                     <span class="w3-text-accent">
                         <i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i><span class="w3-margin-right">5 Apr 2021</span>
                         <i class="fa-solid fa-check fa-fw w3-margin-right"></i><span class="w3-margin-right">System Technologies</span>
                     </span>
-                    
+
                     <p>
                         «System Technologies» 3 (134) 2021. p. 56-66.
                     </p>
@@ -547,7 +633,8 @@
                 <hr>
                 <div class="w3-container">
                     <h5 class="w3-opacity">
-                        <a href="https://sci-conf.com.ua/wp-content/uploads/2021/04/SCIENCE-AND-EDUCATION-PROBLEMS-PROSPECTS-AND-INNOVATIONS-1-3.04.2021.pdf" class="w3-project-link" target="_blank">
+                        <a href="https://sci-conf.com.ua/wp-content/uploads/2021/04/SCIENCE-AND-EDUCATION-PROBLEMS-PROSPECTS-AND-INNOVATIONS-1-3.04.2021.pdf"
+                           class="w3-project-link" target="_blank">
                             <b>Numerical-analytical method for distributed modelling of applied tasks.</b>
                         </a>
                     </h5>
@@ -555,9 +642,10 @@
                         <i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i><span class="w3-margin-right">3 Apr 2021</span>
                         <i class="fa-solid fa-check fa-fw w3-margin-right"></i><span class="w3-margin-right">VII International Scientific and Practical Conference. Kyoto, Japan</span>
                     </span>
-                    
+
                     <p>
-                        Science and education: problems, prospects and innovations Proceedings of VII International Scientific and Practical Conference.<br>
+                        Science and education: problems, prospects and innovations Proceedings of VII International
+                        Scientific and Practical Conference.<br>
                         Kyoto, Japan 1-3 April 2021. . –P. 128-136.
                     </p>
                 </div>
@@ -570,9 +658,10 @@
                     </h5>
                     <span class="w3-text-accent">
                         <i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i><span class="w3-margin-right">28 Mar 2021</span>
-                        <i class="fa-solid fa-check fa-fw w3-margin-right"></i><span class="w3-margin-right">NMetAU</span>
+                        <i class="fa-solid fa-check fa-fw w3-margin-right"></i><span
+                            class="w3-margin-right">NMetAU</span>
                     </span>
-                    
+
                     <p>
                         Modern problems of metallurgy № 24 (2021) p. 98-109.
                     </p>
@@ -580,40 +669,47 @@
                 <hr>
                 <div class="w3-container">
                     <h5 class="w3-opacity">
-                        <a href="https://sci-conf.com.ua/vii-mezhdunarodnaya-nauchno-prakticheskaya-konferentsiya-world-science-problems-prospects-and-innovations-24-26-marta-2021-goda-toronto-kanada-arhiv/" class="w3-project-link" target="_blank">
-                            <b>Research of energy efficiency of processors and network interface of multiprocessor computing systems.</b>
+                        <a href="https://sci-conf.com.ua/vii-mezhdunarodnaya-nauchno-prakticheskaya-konferentsiya-world-science-problems-prospects-and-innovations-24-26-marta-2021-goda-toronto-kanada-arhiv/"
+                           class="w3-project-link" target="_blank">
+                            <b>Research of energy efficiency of processors and network interface of multiprocessor
+                                computing systems.</b>
                         </a>
                     </h5>
                     <span class="w3-text-accent">
                         <i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i><span class="w3-margin-right">26 Mar 2021</span>
                         <i class="fa-solid fa-check fa-fw w3-margin-right"></i><span class="w3-margin-right">VII International Scientific and Practical Conference, Toronto, Canada</span>
                     </span>
-                    
+
                     <p>
-                        World science: problems, prospects and innovations. Abstracts of VII International Scientific and Practical Conference, Toronto, Canada, March 24-26, 2021. P. 108-118
+                        World science: problems, prospects and innovations. Abstracts of VII International Scientific
+                        and Practical Conference, Toronto, Canada, March 24-26, 2021. P. 108-118
                     </p>
                 </div>
                 <hr>
                 <div class="w3-container">
                     <h5 class="w3-opacity">
                         <!-- https://usnd.to/2Rs6 -->
-                        <a href="https://repo.dma.dp.ua/6357/1/FUNDAMENTAL-AND-APPLIED-RESEARCH-IN-THE-MODERN-WORLD-17-19.03.21_P%20467-471.pdf" class="w3-project-link" target="_blank">
-                            <b>Research of the influence of a network interface on the efficiency of modular multiprocessor systems</b>
+                        <a href="https://repo.dma.dp.ua/6357/1/FUNDAMENTAL-AND-APPLIED-RESEARCH-IN-THE-MODERN-WORLD-17-19.03.21_P%20467-471.pdf"
+                           class="w3-project-link" target="_blank">
+                            <b>Research of the influence of a network interface on the efficiency of modular
+                                multiprocessor systems</b>
                         </a>
                     </h5>
                     <span class="w3-text-accent">
                         <i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i><span class="w3-margin-right">19 Mar 2021</span>
                         <i class="fa-solid fa-check fa-fw w3-margin-right"></i><span class="w3-margin-right">BoScience Publisher, Boston, USA</span>
                     </span>
-                    
+
                     <p>
-                        Fundamental and applied research in the modern world. Abstracts of VIII International Scientific and Practical Conference, Boston, USA, March 17-19, 2021. P. 162-171.
+                        Fundamental and applied research in the modern world. Abstracts of VIII International Scientific
+                        and Practical Conference, Boston, USA, March 17-19, 2021. P. 162-171.
                     </p>
                 </div>
                 <hr>
                 <div class="w3-container">
                     <h5 class="w3-opacity">
-                        <a href="https://doi.org/10.31435/rsglobal_wos/30042021/7518" class="w3-project-link" target="_blank">
+                        <a href="https://doi.org/10.31435/rsglobal_wos/30042021/7518" class="w3-project-link"
+                           target="_blank">
                             <b>Intelligent decision support system</b>
                         </a>
                     </h5>
@@ -623,13 +719,18 @@
                     </span>
 
                     <p>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Shvachych G.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Pobochij I.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Sazonova M.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Bilyi O.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Moroz D.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Shvachych G.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Pobochij I.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Sazonova M.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Bilyi O.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Moroz D.</span>
                     </p>
-                    
+
                     <p>
                         International Academy Journal Web of Scholar 2(52), 2021. - P. 1-9.<br>
                         DOI: 30042021/7518
@@ -644,35 +745,46 @@
                     </h5>
                     <span class="w3-text-accent">
                         <i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i><span class="w3-margin-right">17 Dec 2020</span>
-                        <i class="fa-solid fa-check fa-fw w3-margin-right"></i><span class="w3-margin-right">NMetAU</span>
+                        <i class="fa-solid fa-check fa-fw w3-margin-right"></i><span
+                            class="w3-margin-right">NMetAU</span>
                     </span>
-                    
+
                     <p>
-                        ІІ All-Ukrainian Conference of Young Scientists «YOUTH AND SCIENCE. PRACTICE OF INNOVATIVE SEARCH» December 17, 2020, Dnipro, Ukraine – C. 299-303.
+                        ІІ All-Ukrainian Conference of Young Scientists «YOUTH AND SCIENCE. PRACTICE OF INNOVATIVE
+                        SEARCH» December 17, 2020, Dnipro, Ukraine – C. 299-303.
                     </p>
                 </div>
                 <hr>
                 <div class="w3-container">
                     <h5 class="w3-opacity">
-                        <a href="https://www.springer.com/gp/book/9789811571053" class="w3-project-link" target="_blank">
-                            <b>Model of Speed Spheroidization of Metals and Alloys Based on Multiprocessor Computing Complexes</b>
+                        <a href="https://www.springer.com/gp/book/9789811571053" class="w3-project-link"
+                           target="_blank">
+                            <b>Model of Speed Spheroidization of Metals and Alloys Based on Multiprocessor Computing
+                                Complexes</b>
                         </a>
                     </h5>
                     <span class="w3-text-accent">
                         <i class="fa-solid fa-calendar-days fa-fw w3-margin-right"></i><span class="w3-margin-right">23 Oct 2020</span>
-                        <i class="fa-solid fa-check fa-fw w3-margin-right"></i><span class="w3-margin-right">Springer</span>
+                        <i class="fa-solid fa-check fa-fw w3-margin-right"></i><span
+                            class="w3-margin-right">Springer</span>
                     </span>
 
 
                     <p>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Shvachych G.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Moroz B.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Martynenko A.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Hulina I.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Busygin V.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Moroz D.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Shvachych G.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Moroz B.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Martynenko A.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Hulina I.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Busygin V.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Moroz D.</span>
                     </p>
-                    
+
                     <p>
                         Lecture Notes in Networks and Systems 141, Machine Learning<br>
                         for Predictive Analysis<br>
@@ -682,8 +794,10 @@
                 <hr>
                 <div class="w3-container">
                     <h5 class="w3-opacity">
-                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9112502" class="w3-project-link" target="_blank">
-                            <b>Multiprocessor Computing based Parallel Structures of Mathematical Models of Tridiagonal Systems</b>
+                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9112502" class="w3-project-link"
+                           target="_blank">
+                            <b>Multiprocessor Computing based Parallel Structures of Mathematical Models of Tridiagonal
+                                Systems</b>
                         </a>
                     </h5>
                     <span class="w3-text-accent">
@@ -692,30 +806,38 @@
                     </span>
 
                     <p>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Shvachych G.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Pobochii I.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Khokhlova T.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Kholod A.</span>
-                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i class="fa-solid fa-user"></i> Moroz D.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Shvachych G.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Pobochii I.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Khokhlova T.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Kholod A.</span>
+                        <span class="w3-tag w3-light-grey w3-text-dark-grey w3-round w3-margin-tag"><i
+                                class="fa-solid fa-user"></i> Moroz D.</span>
                     </p>
-                    
-                    <p>PROCEEDINGS of the 5th International Conference on Inventive Computation Technologies (ICICT 2020) 26-28, February 2020 Conference on. – IEEE, 2020. –P. 1031-1035.</p>
+
+                    <p>PROCEEDINGS of the 5th International Conference on Inventive Computation Technologies (ICICT
+                        2020) 26-28, February 2020 Conference on. – IEEE, 2020. –P. 1031-1035.</p>
                 </div>
 
                 <br>
-                </div>
-            <!-- End Right Column -->
             </div>
+            <!-- End Right Column -->
+        </div>
 
         <!-- End Grid -->
-        </div>
+    </div>
 
-        <!-- End Page Container -->
-        </div>
+    <!-- End Page Container -->
+</div>
 
-        <footer class="w3-container w3-accent w3-center w3-margin-top">
-            <p><a href="https://moroz.cc" target="_blank">Dmitriy Moroz</a> &copy; 2017 - <script>document.write(new Date().getFullYear())</script></p>
-        </footer>
+<footer class="w3-container w3-accent w3-center w3-margin-top">
+    <p><a href="https://moroz.cc" target="_blank">Dmitriy Moroz</a> &copy; 2017 -
+        <script>document.write(new Date().getFullYear())</script>
+    </p>
+</footer>
 
-    </body>
+</body>
 </html>
